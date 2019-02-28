@@ -1,23 +1,23 @@
 const config = {
   colleges: [
     {
-      name: '',
+      name: '', // Name of college/university
       credentials: {
-        username: '',
-        password: ''
+        username: '', // Username for the portal
+        password: '' // Password for the portal
       },
       pages: {
-        login: '',
-        info: '',
+        login: '', // URL of the login page
+        info: '', // URL of the page where the application status will be found
       },
       selectors: {
         login: {
-          username: '',
-          password: '',
-          submit: ''
+          username: '', // CSS selector for username input field
+          password: '', // CSS selector for password input field
+          submit: '' // CSS selector for submit button for login form.
         },
         info: {
-          status: ''
+          status: '' // CSS selector of the element where the application status is found.
         }
       }
     }
