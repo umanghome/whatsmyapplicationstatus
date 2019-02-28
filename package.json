@@ -4,6 +4,7 @@
   "description": "What's my university application status?",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --inspect index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/umanghome/whatsmyapplicationstatus/issues"
   },
-  "homepage": "https://github.com/umanghome/whatsmyapplicationstatus#readme"
+  "homepage": "https://github.com/umanghome/whatsmyapplicationstatus#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10",
+    "puppeteer": "^1.12.2"
+  }
 }
