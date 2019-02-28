@@ -4,8 +4,9 @@
   "description": "What's my university application status?",
   "main": "index.js",
   "scripts": {
+    "scrape-with-gui": "npm run scrape -- --headless=false",
     "scrape": "node index.js",
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect index.js --headless=false",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/umanghome/whatsmyapplicationstatus#readme",
   "dependencies": {
+    "argparse": "^1.0.10",
     "nodemon": "^1.18.10",
     "puppeteer": "^1.12.2"
   }
