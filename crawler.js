@@ -17,6 +17,23 @@ const login = async (browser, config) => {
   return page;
 }
 
+const info = async (page, config) => {
+  const {
+    pages,
+    selectors,
+  } = config;
+
+  if (page.url() !== pages.info) {
+    await page.goto(pages.info);
+  }
+
+  const element = await page.$(selectors.info.status);
+  const text = await page.evaluate(element => element.textContent, element);
+
+  return text;
+}
+
 module.exports = {
+  info,
   login,
 };

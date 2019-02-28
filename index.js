@@ -1,14 +1,18 @@
 const puppeteer = require('puppeteer');
-const config = require('./config');
-const crawler = require('./crawler');
+const Config = require('./config');
+const Crawler = require('./crawler');
 
 const main = async () => {
   const browser = await puppeteer.launch({
     headless: false
   });
 
-  for (let i = 0; i < config.colleges.length; i++) {
-    const page = await crawler.login(browser, config.colleges[i]);
+  for (let i = 0; i < Config.colleges.length; i++) {
+    const config = Config.colleges[i];
+    const page = await Crawler.login(browser, config);
+    const status = await Crawler.info(page, config);
+
+    await page.close();
   }
 }
 
