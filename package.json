@@ -1,0 +1,19 @@
+{
+  "name": "whatsmyapplicationstatus",
+  "version": "1.0.0",
+  "description": "What's my university application status?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umanghome/whatsmyapplicationstatus.git"
+  },
+  "author": "umanghome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umanghome/whatsmyapplicationstatus/issues"
+  },
+  "homepage": "https://github.com/umanghome/whatsmyapplicationstatus#readme"
+}
