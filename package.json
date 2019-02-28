@@ -4,6 +4,7 @@
   "description": "What's my university application status?",
   "main": "index.js",
   "scripts": {
+    "scrape": "node index.js",
     "start": "nodemon --inspect index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
