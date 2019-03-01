@@ -1,34 +1,10 @@
-const ArgParser = require('argparse').ArgumentParser;
 const puppeteer = require('puppeteer');
+const Args = require('./args');
 const Config = require('./config');
 const Crawler = require('./crawler');
 const Status = require('./status');
 
-const argParser = new ArgParser({
-  addHelp: true
-});
-argParser.addArgument(
-  ['--headless'],
-  {
-    help: 'Use headless? Defaults to true.'
-  }
-);
-
-const parseArgs = args => {
-  let headless = true;
-
-  if (args.headless) {
-    if (args.headless.toLowerCase() === 'false') {
-      headless = false;
-    }
-  }
-
-  return {
-    headless
-  }
-}
-
-const args = parseArgs(argParser.parseArgs());
+const args = Args.getArgs();
 
 const main = async () => {
 
