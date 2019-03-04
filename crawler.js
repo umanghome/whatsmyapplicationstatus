@@ -11,7 +11,7 @@ const login = async (browser, config) => {
 
   await page.type(selectors.login.username, credentials.username);
   await page.type(selectors.login.password, credentials.password);
-  await page.click(selectors.login.submit);
+  page.click(selectors.login.submit);
   await page.waitForNavigation();
 
   return page;

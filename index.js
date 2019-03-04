@@ -25,7 +25,7 @@ const main = async () => {
   }
 
   await browser.close();
-  console.table(statuses);
+  console.log(statuses);
 }
 
 main();
