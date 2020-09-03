@@ -22,6 +22,6 @@
   "dependencies": {
     "argparse": "^1.0.10",
     "nodemon": "^1.18.10",
-    "puppeteer": "^1.12.2"
+    "puppeteer": "^1.13.0"
   }
 }
